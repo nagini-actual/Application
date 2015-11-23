@@ -1,0 +1,22 @@
+@@ -1,7 +1,7 @@
+ {
+   "author": "actualfood",
+   "name": "ah-customer-spa-plugin",
+-  "description": "static assets for browser app",
++  "description": "static assets for the browser app",
+   "version": "0.1.3",
+   "engines": {
+     "node": ">=0.10.0"
+   },
+   "dependencies": {
+     "grunt": "latest"
+   },
+   "devDependencies": {
+     "debug": "^2.1.1",
+     "mocha": "latest",
+     "should": "latest"
+   },
+   "scripts": {
+     "test": "mocha"
+   }
+ }
