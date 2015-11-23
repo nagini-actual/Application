@@ -1,0 +1,105 @@
+{
+   "name": "af-customer-spa-dev",
+   "version": "0.1.0",
+   "authors": [
+     "slattery <mike@actualfood.com>"
+   ],
+   "description": "actualfood customer spa",
+   "repository": {
+     "type" : "git",
+     "url" : "git+ssh://git@github.com-actualfood/actualfood/ah-customer-spa-plugin.git"
+   },
+   "keywords": [
+     "ng",
+     "d3",
+     "oop",
+     "spa"
+   ],
+   "license": "TBD",
+   "ignore": [
+     "**/.*",
+     "vendor",
+     "js",
+     "templates",
+     "less",
+     "node_modules",
+     "bower_components",
+     "test",
+     "tests",
+     "actions",  
+     "config",
+     "etc" ,
+     "gruntfile.js",
+     "package.json",
+     "VERSION.txt"
+   ],
+   "main": [
+   "public/css/leaflet.css",
+   "public/css/d3.css",
+   "public/css/ng-animate.css",
+   "public/css/iebuttons.css",
+   "public/css/nanoscroller.css",
+   "public/css/actionhero.css",
+   "public/css/nutrition.css",
+   "public/css/frontend.css",
+   "public/css/actualfood.css",  
+   "public/modules/frontend.js",
+   "public/modules/frontend.component.localforage.js",
+   "public/modules/frontend.user.order.payment.js",
+   "public/modules/frontend.component.term.js",
+   "public/modules/directives.js",
+   "public/modules/frontend.component.ordersettings.js",
+   "public/modules/ui-bootstrap-tpls-0.13.0.js",
+   "public/modules/frontend.user.order.transaction.js",
+   "public/modules/frontend.user.order.delivery.js",
+   "public/modules/frontend.component.orderitem.js",
+   "public/modules/frontend.component.notify.js",
+   "public/modules/frontend.user.js",
+   "public/modules/frontend.user.account.js",
+   "public/modules/frontend.user.order.js",
+   "public/modules/angularwatchers.js",
+   "public/modules/frontend.component.skuitem.js",
+   "public/modules/frontend.component.findings.js",
+   "public/modules/frontend.component.search.js"
+   ],
+   "dependencies": {
+     "bacon": "~0.7.58",
+     "bootstrap": "~3.3.4",
+     "crossfilter": "~1.3.11",
+     "d3": "~3.5.5",
+     "localforage": "~1.2.3",
+     "postal.js": "~1.0.4",
+     "visionmedia-debug" : "x",
+     "angular": "~1.3.15",
+     "angular-animate": "~1.3.15",
+     "angular-cookies": "~1.3.15",
+     "angular-infinite-scroll": "sparkalow/angular-infinite-scroll",
+     "angular-jwt": "~0.0.8",
+     "angular-localforage": "~1.2.2",
+     "angular-resource": "~1.3.15",
+     "angular-route": "~1.3.15",
+     "angular-sanitize": "~1.3.15",
+     "ui-router-extras": "0.0.14",
+     "angular-spinner": "~0.6.1",
+     "angular-ui-router": "~0.2.15",
+     "angular-ui-bootstrap-bower" : "x",
+     "ng-crossfilter": "~2.4.2",
+     "checklist-model": "x",
+     "lodash": "~3.9.0",
+-    "angular-uuid-service": "x"
++    "node-uuid": "x",
++    "angular-filter": "x",
++    "angular-uuid": "munkychop/angular-uuid"
+   },
+   "private" : true,
+   "resolutions": {
+     "angular": "~1.3.15",
+     "localforage": "~1.2.3",
+     "lodash": "~3.9.0"
+   },
+   "overrides": {
+     "underscore": {
+       "lodash": "x"
+     }
+   }
+ }
