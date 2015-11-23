@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en" ng-app=">
+<html lang="en" ng-app="myapp">
 <!--
 Author:	Nagini
 -->
 <head>
    <meta charset="utf-8">
-   <title>The App</title>
+   <title>The Application</title>
    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
    <link rel="stylesheet" href="css/app.css">
 <script src="bower_components/angular/angular.js"></script>
@@ -19,6 +19,48 @@ Author:	Nagini
    <script src="index.html/#/deadlines/resources"></script>
  </head>
 <body>
+   <div ui-view="nav"></div>
+
+    <div ng-notifications></div>
+
+    <div class="body" ng-cloak>
+        <div class="pane" id="left" data-context="item" data-context-value="left">
+          <div ui-view="search"></div>
+        </div>
+        <div class="pane" id="right" data-context="item" data-context-value="right">
+      	    <div ui-view="list"></div>
+    	</div>
+    	<div class="pane" id="middle" data-context="item" data-context-value="middle">
+    		<div ui-view="detail"></div>
+    	</div>
+        <div ui-view="overlay"></div>
+    </div>
+
+    <div ui-view="page"></div>
+    <div ui-view="modal"></div>
+
+    <div class="splash ng-cloak">
+        <div>
+            <img src="img/loading-leaf.gif" width="100" />
+            <span>Loading...</span>
+        </div>
+    </div>
+    
+    
+    
+    <script>
+        /* less intrusive debug window */
+        dbgEl = angular.element('pre.debug');
+        dbgEl.on('click', function(evt) {
+            if (dbgEl.attr('class').search(' in') >= 0) {
+                dbgEl.removeClass('in');
+                dbgEl.addClass('out');
+            } else if (dbgEl.attr('class').search(' out') >=0) {
+                dbgEl.removeClass('out');
+                dbgEl.addClass('in');
+            }
+        });
+    </script>
 <div ng-view></div>
 </body>
 </html>
